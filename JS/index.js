@@ -371,34 +371,6 @@ function channelMaker (group, fieldset){
 	});
 }
 
-	// let fieldset = document.createElement("fieldset");
-	// channelGroups.appendChild(fieldset);
-
-// var h1 = document.getElementsByTagName("H1")[0];
-//     var att = document.createAttribute("class");
-//     att.value = "democlass";
-//     h1.setAttributeNode(att);
-
-// var btn = document.createElement("BUTTON");
-// var t = document.createTextNode("CLICK ME");
-// btn.appendChild(t);
-// document.body.appendChild(btn);
-
-// var para = document.createElement("P");
-// var t = document.createTextNode("This is a paragraph.");
-// para.appendChild(t);
-// document.getElementById("myDIV").appendChild(para);
-
-// let element = document.getElementsByClassName("dialog_link");
-// let price = document.getElementsByClassName("dollar");
-// console.log(element[0].title);
-// console.log(price[0].innerHTML)
-// // let channels = [];
-
-// for (let i= 0; i < 295; i++){
-// 	channels.push({"channel name": element[i].title "price": price[i].textContent});
-// }
-
 
 
 

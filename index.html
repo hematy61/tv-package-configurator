@@ -9,202 +9,75 @@
 </head>
 <body>
 	<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<defs>
-	<symbol id="icon-plus" viewBox="0 0 32 32">
-	<title>plus</title>
-	<path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
-	</symbol>
-	</defs>
+		<defs>
+		<symbol id="icon-plus" viewBox="0 0 32 32">
+		<title>plus</title>
+		<path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+		</symbol>
+		</defs>
 	</svg>
- <div class="container">
+	<div class="container">
 
   
- 	<header>
- 		<h1>TV Package Configurator</h1>
- 		<div class="nav-bar">
-	 		<ul>
-	 			<li><a href="/index.heml">Subscription</a></li>
-	 			<li><a href="/channel-finder.html">Channel Finder</a></li>
-	 			<li><a href="/order-details.html">Order Details</a></li>
-	 		</ul>
- 		</div>
- 	</header>
+	 	<header>
+	 		<h1>TV Package Configurator</h1>
+	 		<div class="nav-bar">
+		 		<ul>
+		 			<li><a href="/index.heml">Subscription</a></li>
+		 			<li><a href="/channel-finder.html">Channel Finder</a></li>
+		 			<li><a href="/order-details.html">Order Details</a></li>
+		 		</ul>
+	 		</div>
+	 	</header>
 
-	
-	<section class="search-and-order-container">
+		
+		<section class="search-and-order-container">
 
-		<div class="account-search">
-			<form action="" method="post">
-				<h3>Account Search</h3>
-				<div class="cci">
-					<label for="cci">CCI</label>
-					<input type="text" id="cci" placeholder="1-A3C-2BI45">
-				</div>
-				<div class="phone-number">
-					<label for="phone-number">Phone Number</label>
-					<input type="text" id="phone-number" placeholder="2042221111">
-				</div>
-			</form>
-		</div>
-	
-		<div class="order-summary">
-			<h3>Order Summery</h3>
-			<div class="current-services">
-				<p>Current Services</p>
-				<div class="current-services-display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tempore, atque totam vero ratione. Recusandae hic ut error pariatur odio tenetur cupiditate nostrum et eos. Vero repellat corrupti, nobis molestiae.</div>
+			<div class="account-search">
+				<form action="" method="post">
+					<h3>Account Search</h3>
+					<div class="cci">
+						<label for="cci">CCI</label>
+						<input type="text" id="cci" placeholder="1-A3C-2BI45">
+					</div>
+					<div class="phone-number">
+						<label for="phone-number">Phone Number</label>
+						<input type="text" id="phone-number" placeholder="2042221111">
+					</div>
+				</form>
 			</div>
-			<div class="service-changes">
-				<p>Changes</p>
-				<div class="changes-display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt tempore deleniti unde cum, ipsum iure aliquid soluta omnis voluptatibus, aliquam saepe quaerat, illo magnam ducimus quidem, vel eaque aspernatur!</div>
-			</div>
-			<div class="checkout">
-				<a href="/order-details.html" class="checkout">CHECKOUT</a>
-			</div>
-		</div>
-
-	</section>
- 	
- 	
-	<section class="packages-section">
-		<h3>Packages 
-			<svg class="icon icon-plus">
-				<use xlink:href="#icon-plus"></use>
-			</svg>
-		</h3>
-
-		<!-- <div class="packages">
-			<div class="channel-groups">
-				<div class="adventure group">
-					<fieldset>
-						<legend>
-							<input type="checkbox" id="adventure" name="channelGroup" value="adventure">
-							<label for="adventure">Adventure</label>
-							<p>$4.00</p>
-						</legend>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="peachtree" name="channel" value="peachtree">
-								<label for="peachtree" class="channel-number">121</label>
-								<h4>Peachtree TV</h4>
-							</div>
-							<p>$5.00</p>
-						</div>
-						
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="space" name="channel" value="space">
-								<label for="space" class="channel-number">122</label>
-								<h4>Space</h4>
-							</div>
-							<p>$8.00</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="bravo" name="channel" value="bravo">
-								<label for="bravo" class="channel-number">123</label>
-								<h4>Bravo</h4>
-							</div>
-							<p>$8.00</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="american-heroes-channel" name="channel" value="american-heroes-channel">
-								<label for="american-heroes-channel" class="channel-number">124</label>
-								<h4 class="long-name">American Heroes Channel</h4>
-							</div>
-							<p>$1.99</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="paramount" name="channel" value="paramount">
-								<label for="paramount" class="channel-number">125</label>
-								<h4>Paramount</h4>
-							</div>
-							<p>$2.99</p>
-						</div>
-
-						<div class="hd-notice">
-							<p>Add number one at the begining for HD channel number.
-							<br>
-							for example: 121 becomes 1121 </p>
-						</div>
-
-					</fieldset>
+		
+			<div class="order-summary">
+				<h3>Order Summery</h3>
+				<div class="current-services">
+					<p>Current Services</p>
+					<div class="current-services-display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas tempore, atque totam vero ratione. Recusandae hic ut error pariatur odio tenetur cupiditate nostrum et eos. Vero repellat corrupti, nobis molestiae.</div>
 				</div>
-
-				<div class="cinema group">
-					<fieldset>
-						<legend>
-							<input type="checkbox" id="cinema" name="channelGroup" value="cinema">
-							<label for="cinema">Cinema</label>
-							<p>$3.00</p>
-						</legend>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="chch" name="channel" value="chch">
-								<label for="chch" class="channel-number">261</label>
-								<h4>CHCH</h4>
-							</div>
-							<p>$1.99</p>
-						</div>
-						
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="ifc" name="channel" value="ifc">
-								<label for="ifc" class="channel-number">262</label>
-								<h4>IFC</h4>
-							</div>
-							<p>$1.99</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="bravo" name="channel" value="bravo">
-								<label for="bravo" class="channel-number">123</label>
-								<h4>Bravo</h4>
-							</div>
-							<p>$8.00</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="american-heroes-channel" name="channel" value="american-heroes-channel">
-								<label for="american-heroes-channel" class="channel-number">124</label>
-								<h4 class="long-name">American Heroes Channel</h4>
-							</div>
-							<p>$1.99</p>
-						</div>
-
-						<div class="channel">
-							<div class="channel-name-row">
-								<input type="checkbox" id="paramount" name="channel" value="paramount">
-								<label for="paramount" class="channel-number">125</label>
-								<h4>Paramount</h4>
-							</div>
-							<p>$2.99</p>
-						</div>
-
-						<div class="hd-notice">
-							<p>Add number one at the begining for HD channel number.
-							<br>
-							for example: 121 becomes 1121 </p>
-						</div>
-
-					</fieldset>
+				<div class="service-changes">
+					<p>Changes</p>
+					<div class="changes-display">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur nesciunt tempore deleniti unde cum, ipsum iure aliquid soluta omnis voluptatibus, aliquam saepe quaerat, illo magnam ducimus quidem, vel eaque aspernatur!</div>
+				</div>
+				<div class="checkout">
+					<a href="/order-details.html" class="checkout">CHECKOUT</a>
 				</div>
 			</div>
-		</div> -->
-		<div class="packages">
-			<div class="channel-groups">
-			</div>
-		</div>
-	</section>
+		</section>
+	 	
+	 	
+		<section class="packages-section">
+			<h3>Packages 
+				<svg class="icon icon-plus">
+					<use xlink:href="#icon-plus"></use>
+				</svg>
+			</h3>
 
-<script src="/JS/index.js"></script>
+			<div class="packages">
+				<div class="channel-groups">
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="JS/index.js"></script>
 </body>
 </html>
