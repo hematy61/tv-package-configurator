@@ -371,7 +371,34 @@ function channelMaker (group, fieldset){
 	});
 }
 
+// event handler on group selection
+// By selecting and deselecting a group legend, all subchannels are being toggled
 
+let legend = document.querySelectorAll("legend input");
+legend.forEach((eachLegend) => {
+	// handeling group selecting
+	eachLegend.addEventListener("click", () => {
+		let channelsGroup = document.querySelectorAll(`div.${eachLegend.id} input`);
+		channelsGroup.forEach((channel, index) => {
+			if (channelsGroup[0].checked === true){
+				channelsGroup[index].checked = true;
+			}else {
+				channelsGroup[index].checked = false;
+			}
+		});
+	});
+
+	// handeling unchecking selected group if one of subchannels unselected
+	let channels = document.querySelectorAll(`div.${eachLegend.id} div.channel-name-row input`);
+	channels.forEach(channel => {
+		channel.addEventListener("click", () => {
+			if (channel.checked === false) {
+				eachLegend.checked = false;
+			}
+		});
+	});
+
+});
 
 
 
