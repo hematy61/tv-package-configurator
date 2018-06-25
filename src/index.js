@@ -283,6 +283,7 @@ const groupsNames = [
 /* ================== General Variables =======================
    ============================================================*/
 let changeDisplay = document.querySelector(".changes-display");
+let changes =[];
 
 // Making Elements with attributes and text values -----------
 function elementAndAttrMaker (type, attr, val, text){
@@ -376,11 +377,12 @@ function channelMaker (group, fieldset){
 // By selecting and deselecting a group legend, all subchannels are being toggled
 
 let legend = document.querySelectorAll("legend input");
-legend.forEach((eachLegend) => {
+legend.forEach((eachLegend, i) => {
 	// handeling group selecting
 	eachLegend.addEventListener("click", () => {
 		let channelsGroup = document.querySelectorAll(`div.${eachLegend.id} input`);
-		// let selectedChannels =[];
+		
+		// selecting all channels of a group if its legend was selected
 		channelsGroup.forEach((channel, index) => {
 			if (channelsGroup[0].checked === true){
 				channelsGroup[index].checked = true;
@@ -388,6 +390,22 @@ legend.forEach((eachLegend) => {
 				channelsGroup[index].checked = false;
 			}
 		});
+
+		// Updating Change Display for added groups
+		if (eachLegend.checked === true){
+			if (changes.indexOf(groupsNames[i].name) === -1) {
+				changes.push(groupsNames[i].name);
+				changeDisplay.innerText = changes.join(" - ");
+				console.log("changes", changes)
+			}
+		}
+		
+		// Updating Change Display for removed groups
+		if (eachLegend.checked === false){
+			let afterSlice = changes.splice(changes.indexOf(groupsNames[i].name), (changes.indexOf(groupsNames[i].name) + 1));
+			changeDisplay.innerText = changes.join(" - ");
+
+		}
 	});
 
 	// handeling unchecking selected group if one of subchannels unselected

@@ -16,10 +16,12 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   max-width: 1500px;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   background: #03162E;
   color: #c8c8c8;
   line-height: 30px;
+	overflow-x: hidden;
+	margin-right: 1rem;
 }
 
 ul, h1, h3, h4, li, p {
@@ -111,6 +113,7 @@ input[type="checkbox"]:checked:after {
 /*--------------------- Header ----------------------*/
 header {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: baseline;
 	margin-bottom: 2rem;
@@ -147,6 +150,7 @@ h1 {
 /*-------- Account Search And Order Summary ---------*/
 .search-and-order-container {
 	display: flex;
+	flex-wrap: wrap;
 	padding-left: 1rem;
 	width: 100%;
 }
@@ -169,6 +173,7 @@ h1 {
 	padding-bottom: 1rem;
 	align-items: center;
 }
+
 
 .phone-number {
 	display: flex;
@@ -210,6 +215,11 @@ input:focus {
 padding:0 1rem 0 1rem;
 }
 
+.changes-display,
+.current-services {
+	min-height: 120px;
+}
+
 .checkout {
 	display: flex;
 	flex-direction: row-reverse;
@@ -224,7 +234,7 @@ padding:0 1rem 0 1rem;
 /*------------------ Channel Groups -----------------*/
 .packages-section {
 	width: 100%;
-	padding-left: 1rem;
+	padding: 0 1rem;
 }
 
 .packages-section h3 {
