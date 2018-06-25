@@ -1,0 +1,322 @@
+/*.color-primary-0 { color: #2B4970 }*/
+/*.color-primary-1 { color: #8EA0B7 } input-background*/
+/*.color-primary-2 { color: #546E91 } hover effect*/
+/*.color-primary-3 { color: #102B4F } placeholder*/
+/*.color-primary-4 { color: #03162E }*/
+/*.text.color { color: #c8c8c8 }*/
+/* subtitle color { color: #a27f49 }*/
+
+*, *:after, *before {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  background: #03162E;
+  color: #c8c8c8;
+  line-height: 30px;
+}
+
+ul, h1, h3, h4, li, p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	display: inline-block;
+	font-size: 1.2rem;
+	color: #c8c8c8;
+	text-align: center;
+}
+
+a:hover {
+	color: white;
+	background: #546E91;
+	border-radius: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #03162E;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #03162E;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #03162E;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 8px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	outline: none;
+	height: 20px;
+	width: 20px;
+}
+
+input[type="checkbox"]:active,
+input[type="checkbox"]:checked:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+input[type="checkbox"]:checked {
+	background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+
+input[type="checkbox"]:checked:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #102B4F;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+/*---------------------------------------------------*/
+/*--------------------- Header ----------------------*/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	padding-left: 1rem;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+}
+.nav-bar ul {
+	display: flex;
+	list-style-type: none;
+}
+
+.nav-bar a:link, a:visited {
+	display: inline-block;
+	font-size: 1.2rem;
+	color: #c8c8c8;
+	padding: 1.8rem;
+	text-align: center;
+}
+
+.nav-bar a:hover {
+	color: white;
+	background: #546E91;
+}
+
+/*---------------------------------------------------*/
+/*-------- Account Search And Order Summary ---------*/
+.search-and-order-container {
+	display: flex;
+	padding-left: 1rem;
+	width: 100%;
+}
+.account-search {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+
+}
+.account-search h3 {
+	padding-bottom: 1.5rem;
+}
+
+.cci, .phone-number {
+	padding: 0 1rem;
+}
+.cci {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+	align-items: center;
+}
+
+.phone-number {
+	display: flex;
+	justify-content: space-between;
+}
+
+.account-search input {
+	padding: .4rem .4rem .4rem .8rem;
+	font-size: .9rem;
+	background: #8EA0B7;
+	border: 0;
+	text-transform: uppercase;
+	color: #102B4F;
+	width: 7rem;
+	border-radius: 5px;
+	outline: none;
+}
+
+input:focus {
+	background: lightblue;
+}
+
+.order-summary {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	overflow: auto;
+	min-width: 300px;
+	margin: 0 2rem 0 4rem;
+}
+
+.order-summary p {
+	color: #a27f49;
+}
+
+.current-services, 
+.service-changes, 
+.checkout {
+padding:0 1rem 0 1rem;
+}
+
+.checkout {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: .5rem;
+}
+
+.checkout a:link {
+	padding: 1rem;
+}
+
+/*---------------------------------------------------*/
+/*------------------ Channel Groups -----------------*/
+.packages-section {
+	width: 100%;
+	padding-left: 1rem;
+}
+
+.packages-section h3 {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	max-width: 120px;
+}
+
+.packages {
+	width: 100%;
+}
+
+.channel-groups {
+	min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  line-height: 20px;
+  justify-content: center;
+}
+.group {
+	display: flex;
+	margin: 1rem 0;
+}
+
+fieldset {
+	min-width: 320px;
+	padding: 0 .3rem .5rem .2rem;
+}
+
+legend{
+	color: #a27f49;
+	font-size: 1.3rem;
+}
+
+legend input[type="checkbox"] {
+	top: 0;
+}
+
+legend p {
+	display: inline-block;
+	padding-left: 2rem;
+}
+
+.channel {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-left: 1.5rem;
+}
+.channel div, .channel p {
+	display: inline-block;
+	font-weight: normal;
+}
+
+.channel-number{
+	padding-left: .4rem;
+}
+
+.channel-name-row h4 {
+	display: inline-block;
+	font-weight: normal;
+	padding: 0 .6rem 0 .6rem;
+}
+
+.long-name {
+	font-size: .95rem;
+}
+
+.hd-notice p {
+	width: 320px;
+	text-align: center;
+	padding-top: 1rem;
+	color: #a27676;
+}
+
+
+
+/*---------------------------------------------------*/
+/*------------------ Media Queries ------------------*/
+  /*1068, 735, */
+@media (max-width: 1000px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
